@@ -1,5 +1,12 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
 body{
-
+	font: 16px 'Lato', Calibri, Arial, sans-serif;
+	color: #47A3DA;
+	text-align: center;
 }
 
 /* Typography */
@@ -52,6 +59,102 @@ textarea {
 
 /* Layout */
 .ba-container{
-	padding-left: 20px;
-	padding-right: 20px;
+	max-width: 1040px;
+	margin: 75px auto 50px;
+	border: 3px solid #47A3DA;
+
+}
+h1 {
+	font-size: 28px;
+	padding: 25px 0;
+	margin: 0 20px;
+	text-align: left;
+	border-bottom: 3px solid #47A3DA;
+}
+.ba-grid {
+	margin-left: 0;
+}
+.ba-grid > [class*="ba-width-"] {
+	padding: 0;
+}
+.ba-grid:first-child {
+	padding-top: 50px;
+	margin-bottom: 75px;
+}
+.ba-grid + .ba-grid {
+    margin-bottom: 75px;
+    margin-top: 0;
+}
+.ba-grid:first-child {
+	padding-top: 50px;
+}
+.ba-grid:last-child {
+	margin-bottom: 45px;
+}
+.ba-grid > [class*="ba-width-"] {
+    float: left;
+    margin: 0 4.5%;
+    box-sizing: border-box;
+	width: 24%;
+}
+.ba-box {
+ display: inline-block;
+
+}
+.ba-box a {
+	text-decoration: none;
+	color: #47A3DA;
+	font-size: 24px;
+}
+.ba-box a:hover, .ba-box a:active {
+	color: #02639D;
+}
+.ba-box a h2 {
+	font-size: 32px;
+}
+.ba-box  a + .ba-price {
+	margin-top: 10px;
+}
+.ba-price {
+	font-size: 24px;
+	color: #C3C7C9;
+	margin-bottom: 15px;
+}
+.ba-about_vine {
+	min-height: 70px;
+	margin-bottom: 30px;
+}
+button.ba-cart {
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	background: #47A3DA;
+	color: #fff;
+	padding: 10px 20px 10px 40px;
+	border: none;
+	border-radius: 5%;
+	position: relative;
+}
+.ba-button-text {
+
+}
+.ba-button-text:before {
+	content: "+";
+	color: #47A3DA;
+	font-weight: bold;
+	background-color: #FFF;
+	border-radius: 50%;
+	position: absolute;
+	left: 18px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 2px;
+}
+button.ba-cart:hover {
+	background: #02639D;
+	border: none;
+}
+button.ba-cart:active {
+	background: #02639D;
+	border: 1px solid #02639D;
 }
